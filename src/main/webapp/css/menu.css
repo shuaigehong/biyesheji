@@ -7,7 +7,7 @@
 	background-color:#111;
 	padding-left:5px;
 	padding-right:5px;
-	z-index:999px
+	z-index:999;
 }
 .MetroMenuBox a:link {
 	text-decoration:none
@@ -1019,7 +1019,7 @@
 }
 100% {
 	-webkit-transform-origin:center center;
-	-webkit-transform:rotate(0);
+	-webkit-transform:rotate(0deg);
 	opacity:1
 }
 }@-moz-keyframes rotateIn {
@@ -1030,7 +1030,7 @@
 }
 100% {
 	-moz-transform-origin:center center;
-	-moz-transform:rotate(0);
+	-moz-transform:rotate(0deg);
 	opacity:1
 }
 }@-o-keyframes rotateIn {
@@ -1041,7 +1041,7 @@
 }
 100% {
 	-o-transform-origin:center center;
-	-o-transform:rotate(0);
+	-o-transform:rotate(0deg);
 	opacity:1
 }
 }@keyframes rotateIn {
@@ -1052,7 +1052,7 @@
 }
 100% {
 	transform-origin:center center;
-	transform:rotate(0);
+	transform:rotate(0deg);
 	opacity:1
 }
 }.rotateIn {

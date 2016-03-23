@@ -13,7 +13,7 @@
     cursor: pointer;
     display: block;
     background: rgb(39, 193, 144);">
-    <img src="img/manuOpen.png" alt="" style="width: 42px;
+    <img src="img/menuimages/manuOpen.png" alt="" style="width: 42px;
     height: 23px;
     padding-left: 29px;
     padding-top: 15px;">
@@ -23,7 +23,7 @@
     height: 50px;
     cursor: pointer;
     background: rgb(39, 193, 144);">
-    <img src="img/manuBack.png" alt="" style="width: 42px;
+    <img src="img/menuimages/manuBack.png" alt="" style="width: 42px;
     height: 23px;
     padding-left: 29px;
     padding-top: 15px;">
@@ -48,7 +48,7 @@
     });
     $("#botCallback").click(function() {
         $.MetroMenu({
-                    backicon: "images/back.png",
+                    backicon: "img/menuimages/back.png",
                     animation: "fadeInUpBig",
                     position: "left",
                     color1: "rgb(249, 54, 54)",
@@ -58,87 +58,86 @@
                     escclose: false,
                     items: [{
                         name: "Calendar",
-                        icon: "images/calendar.png"
+                        icon: "img/menuimages/calendar.png"
                     },
                         {
                             name: "Office",
-                            icon: "images/office.png",
+                            icon: "img/menuimages/office.png",
                             items: [{
                                 name: "Word",
-                                icon: "images/word.png",
+                                icon: "img/menuimages/word.png",
                             },
                                 {
                                     name: "Excel",
-                                    icon: "images/excel.png",
+                                    icon: "img/menuimages/excel.png",
                                 },
                                 {
                                     name: "Power Point",
-                                    icon: "images/powerpoint.png",
+                                    icon: "img/menuimages/powerpoint.png",
                                 },
                                 {
                                     name: "Outlook",
-                                    icon: "images/outlook.png"
+                                    icon: "menuimages/outlook.png"
                                 }]
                         },
                         {
                             name: "Mailing",
-                            icon: "images/mail.png",
+                            icon: "img/menuimages/mail.png",
                             items: [{
                                 name: "Sent Mail",
-                                icon: "images/sent.png"
+                                icon: "img/menuimages/sent.png"
                             },
                                 {
                                     name: "Read Mail",
-                                    icon: "images/mailopen.png"
+                                    icon: "img/menuimages/mailopen.png"
                                 },
                                 {
                                     name: "Go Gmail",
-                                    icon: "images/gmail.png",
-                                    link: "http://sc.chinaz.com"
+                                    icon: "img/menuimages/gmail.png",
                                 }]
                         },
                         {
                             name: "Adobe Suit",
-                            icon: "images/ps.png",
+                            icon: "img/menuimages/ps.png",
                             items: [{
                                 name: "Photoshop",
-                                icon: "images/photoshop.png"
+                                icon: "img/menuimages/photoshop.png"
                             },
                                 {
                                     name: "Dreamweaver",
-                                    icon: "images/dw.png"
+                                    icon: "img/menuimages/dw.png"
                                 },
                                 {
                                     name: "Ilustrator",
-                                    icon: "images/ai.png"
+                                    icon: "img/menuimages/ai.png"
                                 },
                                 {
                                     name: "After Effects",
-                                    icon: "images/ae.png"
+                                    icon: "img/menuimages/ae.png"
                                 }]
                         },
                         {
                             name: "Options",
-                            icon: "images/gear.png",
+                            icon: "img/menuimages/gear.png",
                             items: [{
                                 name: "Save",
-                                icon: "images/save.png"
+                                icon: "img/menuimages/save.png"
                             },
                                 {
                                     name: "Manager",
-                                    icon: "images/taskmgr.png"
+                                    icon: "img/menuimages/taskmgr.png"
                                 },
                                 {
                                     name: "Control Panel",
-                                    icon: "images/control.png"
+                                    icon: "img/menuimages/control.png"
                                 },
                                 {
                                     name: "Folders",
-                                    icon: "images/folder.png"
+                                    icon: "img/menuimages/folder.png"
                                 },
                                 {
                                     name: "Log Out",
-                                    icon: "images/shut-down.png"
+                                    icon: "img/menuimages/shut-down.png"
                                 }]
                         }]
                 },
