@@ -7,27 +7,27 @@
 </head>
 <link rel="stylesheet" href="css/menu.css" />
 <script src="js/menu.js"></script>
-<body style="border: 0px;padding:0px;margin: 0px">
-<div id="openNavBut" onclick="openNav()" style="width: 100px;
-    height: 50px;
-    cursor: pointer;
-    display: block;
-    background: rgb(39, 193, 144);">
-    <img src="img/menuimages/manuOpen.png" alt="" style="width: 42px;
-    height: 23px;
-    padding-left: 29px;
-    padding-top: 15px;">
-</div>
-<div id="closeNavBut" onclick="closeNav()" style="display: none;
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    background: rgb(39, 193, 144);">
-    <img src="img/menuimages/manuBack.png" alt="" style="width: 42px;
-    height: 23px;
-    padding-left: 29px;
-    padding-top: 15px;">
-</div>
+<body style="border: 0px;padding:0px;margin: 0px" onload="document.getElementById('botCallback').click();">
+<%--<div id="openNavBut" onclick="openNav()" style="width: 100px;--%>
+    <%--height: 50px;--%>
+    <%--cursor: pointer;--%>
+    <%--display: block;--%>
+    <%--background: rgb(7, 245, 168);">--%>
+    <%--<img src="img/menuimages/manuOpen.png" alt="" style="width: 42px;--%>
+    <%--height: 23px;--%>
+    <%--padding-left: 29px;--%>
+    <%--padding-top: 15px;">--%>
+<%--</div>--%>
+<%--<div id="closeNavBut" onclick="closeNav()" style="display: none;--%>
+    <%--width: 100px;--%>
+    <%--height: 50px;--%>
+    <%--cursor: pointer;--%>
+    <%--background: rgb(7, 245, 168);">--%>
+    <%--<img src="img/menuimages/manuBack.png" alt="" style="width: 42px;--%>
+    <%--height: 23px;--%>
+    <%--padding-left: 29px;--%>
+    <%--padding-top: 15px;">--%>
+<%--</div>--%>
     <div class="botBlue" id="botCallback" style="display: none"></div>
     <div id="botCloseAll"  style="display: none"></div>
 <script type="text/javascript">
@@ -51,8 +51,9 @@
                     backicon: "img/menuimages/back.png",
                     animation: "fadeInUpBig",
                     position: "left",
-                    color1: "rgb(249, 54, 54)",
-                    color2: "rgb(193, 11, 11)",
+                    color1: "rgb(247,68,97)",
+//            rgb(7, 245, 168)
+                    color2: "rgb(15, 214, 149)",
                     withtooltip: true,
                     closeonclick: false,
                     escclose: false,
@@ -77,7 +78,8 @@
                                 },
                                 {
                                     name: "Outlook",
-                                    icon: "menuimages/outlook.png"
+                                    icon: "menuimages/outlook.png",
+                                    link:"https://www.baidu.com/"
                                 }]
                         },
                         {
@@ -140,10 +142,6 @@
                                     icon: "img/menuimages/shut-down.png"
                                 }]
                         }]
-                },
-                function(a) {
-                    window.open("https://www.baidu.com/","main");
-
                 })
     });
 </script>
