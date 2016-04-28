@@ -41,4 +41,13 @@ public class Menu extends AbstractEntity {
     public void setRemark(String remark) {
         this.remark = remark;
     }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", remark='" + remark + '\'' +
+                '}';
+    }
 }
