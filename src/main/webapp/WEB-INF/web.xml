@@ -30,7 +30,7 @@
   </context-param>
 
 
-  <!--<servlet-mapping>-->
+ <!--<servlet-mapping>-->
     <!--<servlet-name>default</servlet-name>-->
     <!--<url-pattern>*.svg</url-pattern>-->
   <!--</servlet-mapping>-->
@@ -45,8 +45,16 @@
   <!--</servlet-mapping>-->
   <!--<servlet-mapping>-->
     <!--<servlet-name>default</servlet-name>-->
-    <!--<url-pattern>*.woff</url-pattern>-->
-  <!--</servlet-mapping>-->
+    <!--<url-pattern>*.css</url-pattern>-->
+<!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>default</servlet-name>-->
+        <!--<url-pattern>*.js</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>default</servlet-name>-->
+        <!--<url-pattern>*.jpg</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 
 
@@ -65,10 +73,10 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>DispatcherServlet</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>*.htm</url-pattern>
   </servlet-mapping>
 
-  <filter>
+    <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
     <init-param>

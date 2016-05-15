@@ -41,23 +41,23 @@
 
 
 
-<header>
-    <nav class="cd-stretchy-nav">
-        <a href="#0">
-            <img class="cd-nav-trigger" src="img/userHead/logo.jpg" >
-        </a>
+<%--<header>--%>
+    <%--<nav class="cd-stretchy-nav">--%>
+        <%--<a href="#0">--%>
+            <%--<img class="cd-nav-trigger" src="img/userHead/logo.jpg" >--%>
+        <%--</a>--%>
 
-        <ul>
-            <li><a href="#0"><span>个人主页</span></a></li>
-            <li><a href="#0"><span>My Idea</span></a></li>
-            <li><a href="#0"><span>设置</span></a></li>
-            <li><a href="#0"><span>我 喜 欢</span></a></li>
-            <li><a href="#0"><span>相关</span></a></li>
-        </ul>
+        <%--<ul>--%>
+            <%--<li><a href="#0"><span>个人主页</span></a></li>--%>
+            <%--<li><a href="#0"><span>My Idea</span></a></li>--%>
+            <%--<li><a href="#0"><span>设置</span></a></li>--%>
+            <%--<li><a href="#0"><span>我 喜 欢</span></a></li>--%>
+            <%--<li><a href="#0"><span>相关</span></a></li>--%>
+        <%--</ul>--%>
 
-        <span aria-hidden="true" class="stretchy-nav-bg"></span>
-    </nav>
-</header>
+        <%--<span aria-hidden="true" class="stretchy-nav-bg"></span>--%>
+    <%--</nav>--%>
+<%--</header>--%>
 
 
 

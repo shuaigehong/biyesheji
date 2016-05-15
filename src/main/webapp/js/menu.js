@@ -6599,7 +6599,7 @@ function CloseMetroMenu() {
         }
         function Q() {
             b(".MenuIcon").css("height", "50px");
-            b(".MenuOption").css("font-size", "18px");
+            b(".MenuOption").css("font-size", "13px");
             var e = b(window).height();
             var l = b(window).width();
             var d = b("#MenuOptionBar").css("height");
@@ -6658,7 +6658,7 @@ function CloseMetroMenu() {
         function S(f) {
             f = parseInt(f) + 1;
             b(".SubtitleMenuIcon").css("height", "50px");
-            b(".SubMenuOptionBar").css("font-size", "18px");
+            b(".SubMenuOptionBar").css("font-size", "13px");
             var g = b(window).height();
             var d = b(".SubMenuOptionBar").css("height");
             var h = f * 100;

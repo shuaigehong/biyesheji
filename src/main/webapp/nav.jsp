@@ -51,15 +51,16 @@
                     backicon: "img/menuimages/back.png",
                     animation: "fadeInUpBig",
                     position: "left",
-                    color1: "rgb(247,68,97)",
+                    color1: "rgb(187, 162, 184)",
 //            rgb(7, 245, 168)
-                    color2: "rgb(15, 214, 149)",
+                    color2: "rgb(254, 102, 153)",
                     withtooltip: true,
                     closeonclick: false,
                     escclose: false,
                     items: [{
-                        name: "Calendar",
-                        icon: "img/menuimages/calendar.png"
+                        name: "Make order",
+                        icon: "img/menuimages/sent.png",
+                        link: "/order/openPage.htm"
                     },
                         {
                             name: "Office",
@@ -78,8 +79,8 @@
                                 },
                                 {
                                     name: "Outlook",
-                                    icon: "menuimages/outlook.png",
-                                    link:"https://www.baidu.com/"
+                                    icon: "img/menuimages/outlook.png",
+                                    link: "https://www.baidu.com"
                                 }]
                         },
                         {
@@ -87,7 +88,7 @@
                             icon: "img/menuimages/mail.png",
                             items: [{
                                 name: "Sent Mail",
-                                icon: "img/menuimages/sent.png"
+                                icon: "img/menuimages/calendar.png"
                             },
                                 {
                                     name: "Read Mail",
