@@ -1,6 +1,5 @@
 package com.bishe.web.controller.test;
 
-import com.bishe.domain.Menu;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,13 +20,13 @@ import java.util.UUID;
 public class FileUploadTestController {
 
     @RequestMapping(value="/upload",method= RequestMethod.POST)
-    private void fildUpload(Menu menu , @RequestParam(value="file",required=false) MultipartFile file[],
+    private void fildUpload( @RequestParam(value="file",required=false) MultipartFile file[],
 //                              HttpServletRequest request
                             HttpServletResponse response
     )throws Exception{
         //基本表单
         Writer out = response.getWriter();
-        System.out.println(menu.toString());
+//        System.out.println(menu.toString());
         String str = "";
         if (file.length!=0){
             for (int i = 0; i < file.length; i++) {
@@ -61,8 +60,12 @@ public class FileUploadTestController {
 //        return "error";
     }
 
-    @RequestMapping(value="/forward")
+    @RequestMapping(value="/openPage")
     private String forward(){
         return "fileUpTest/fileUpTest";
+    }
+    @RequestMapping(value="/tiptest")
+    private String forward1(){
+        return "fileUpTest/tiptest";
     }
 }

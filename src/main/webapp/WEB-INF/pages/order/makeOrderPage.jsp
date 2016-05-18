@@ -23,13 +23,6 @@
         vertical-align: sub;
     }
 
-    span {
-        font-size: 18px;
-        font-weight: normal;
-        font-family: "Microsoft YaHei";
-        color: gray;
-    }
-
     .warmDiv {
         float: left;
         width: 182px;
@@ -56,6 +49,7 @@
         text-align: center;
         overflow: hidden;
         border-right: 1px solid #B5AEAE;
+        color: gray;
     }
 
     .inputText {
@@ -80,21 +74,82 @@
         padding-top: 40px;
         border-bottom: 1px solid rgba(204, 204, 204, 0.54);
     }
+    .subBut{
+        width: 100%;
+        background: #FD5953;
+        color: white;
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        font-weight: 500;
+        border: 2px solid #FD5953;
+        height: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .subBut:hover{
+        background: white;
+        color: #FD5953;
+    }
 </style>
 <link type="text/css" rel="stylesheet" href="../../../css/button.css">
 <link rel='stylesheet' href='../../../css/bootstrap.css'>
 <link rel="stylesheet" type="text/css" href="../../../css/makeOrder/zzsc-demo.css">
 <link rel="stylesheet" href="../../../css/makeOrder/style.css">
 <link type="text/css" href="/css/nav/navCss/font-awesome.css" rel="stylesheet">
+<%--<link type="text/css" href="../../../css/tip/tipso.css" rel="stylesheet">--%>
+<%--<link type="text/css" href="../../../css/tip/tipso.min.css" rel="stylesheet">--%>
 <body>
 <jsp:include page="../../../common/top.jsp"/>
+<%
+    String flag = (String)request.getAttribute("flag");
+    if (null != flag && flag.equals("error")){
+%>
+<div id="info" onclick="infoControl()" style="display: block;width: 100%;
+            position: absolute;
+            bottom: 0px;
+            height: 40px;
+            background: rgba(216, 193, 0, 0.541176);
+            line-height: 40px;
+            font-family: Microsoft YaHei;
+            color: red;
+            text-align: center;">
+    <div>添加订单信息出错！</div>
+</div>
+<%}
+    if (null != flag && flag.equals("yes")){
+%>
+    <div id="info" onclick="infoControl()" style="display: block;width: 100%;
+                position: absolute;
+                bottom: 0px;
+                height: 40px;
+                background: rgba(216, 193, 0, 0.541176);
+                line-height: 40px;
+                font-family: Microsoft YaHei;
+                color: red;
+                text-align: center;">
+        <div style="width: 50%;
+            float: left;
+            text-align: right;
+            margin-right: 20px;">添加订单信息成功！</div>
+        <a href="${pageContext.request.contextPath}/order/orderInfo.htm" ><div style="width: 100px;
+            float: left;
+            height: 30px;
+            background: #00F9AA;
+            margin-top: 5px;
+            line-height: 30px;
+            color: white;
+            border-radius: 15px;">前往查看</div></a>
+    </div>
+    <%
+    }
+%>
 <div class="bookHead">
     <span style="font-size: 24px;font-weight: normal;font-family: Microsoft YaHei;color: rgb(138, 138, 140);">
         我的预定
     </span>
 </div>
 <%
-    if (null != session.getAttribute("user")) {
+    if (null == session.getAttribute("user")) {
 %>
 <div class="warm"
      style="background: rgba(119, 116, 116, 0.25);width: 60%;height: 150px;border-right: 5px;line-height: 100px;position: relative;top: 100px;left: 20%;border-radius: 17px;">
@@ -104,11 +159,11 @@
     <div style="float: left;width: 2px;background: white;height: 100%;margin-left: 1px;"></div>
     <div class="warmDiv">
         <span>用户未登录！</span><br>
-        <a href="/login/openPage.htm" class="button button-3d button-action button-pill" target="main">Go login!</a>
+        <a href="/user/openLoginPage.htm" class="button button-3d button-action button-pill" target="main">Go login!</a>
     </div>
     <div class="warmDiv">
         <span>没有账号？</span><br>
-        <a href="/register/openPage.htm" class="button button-3d button-action button-pill" target="main">Go
+        <a href="/user/openRegisterPage.htm" class="button button-3d button-action button-pill" target="main">Go
             register!</a>
     </div>
 
@@ -119,67 +174,81 @@
 <section class="zzsc-container">
     <div class="container">
         <div class="dataForm">
-
+            <form action="${pageContext.request.contextPath}/order/addOrder.htm" method="post">
             <div class="panel-group wrap" id="bs-collapse">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="inputAll">
+                            <div class="inputP">
+                                <span class="icon icon-pencil" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                            </div>
+                            <input class="inputText" type="text" name="orderTitle" placeholder="订单标题">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of panel -->
+
+                <div class="panel" style="height: 50px">
+                    <div class="panel-heading">
+                        <div class="inputAll" style="float: left;width: 68%;">
+                            <div class="inputP">
+                                <span class="icon icon-tags" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                            </div>
+                            <input class="inputText" style="width: 400px" type="text" name="keyWords" placeholder="添加标签">
+                        </div>
+                        <div class="inputAll" style="float: right;width: 30%;">
+                            <div class="inputP">
+                                <span class="icon icon-yen" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                            </div>
+                            <input class="inputText" style="width: 153px" type="text" name="price" placeholder="我的出价">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of panel -->
+
+                <div class="panel">
+                    <div class="panel" style="border-radius: 5px;border: 1px solid #B5AEAE">
+                        <div class="panel-heading" style="border-radius: 10px;">
+                            <div style="height: 40px;width:100%;border-radius: 5px">
+                                <div class="inputP">
+                                    <span class="icon icon-edit" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                                </div>
+                                <div style="float: left;color: #AEAEAE;line-height: 40px;font-size: 14px;margin-left: 10px;">
+                                    详细描述
+                                </div>
+                                <div class="inputP" data-toggle="collapse" data-parent="#" href="#three" style="float: right;cursor: pointer;border-width: 0px 0px 0px 1px;border-style: solid;border-color: #B5AEAE;border-radius: 1px;">
+                                    <span  class="icon icon-plus" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="three" class="panel-collapse collapse">
+                            <div class="panel-body" style="padding: 0;">
+                                <textarea name="orderDescript" placeholder="预定信息的详细描述" style="height: 139px;width: 100%;border: 0;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of panel -->
 
                 <div class="panel">
                     <div class="panel-heading">
                         <div class="inputAll">
-                            <div class="inputP"><span class="icon icon-user" style="line-height: 40px;"> </span></div>
-                            <input class="inputText" type="text" placeholder="用户昵称 / 电子邮件">
+                            <div class="inputP">
+                                <span class="icon icon-filter" style="line-height: 40px;color: gray;font-size: 12px;"></span>
+                            </div>
+                            <input class="inputText" type="text" name="commond" placeholder="我的要求">
                         </div>
                     </div>
                 </div>
-                <!-- end of panel -->
 
                 <div class="panel">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#" href="#two">
-                                Collapse item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="two" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Where is the harp on the harpstring, and the red fire glowing? Where is the spring and the
-                            harvest and the tall corn growing?
-                        </div>
-
+                    <div class="panel-heading" >
+                        <input style="height: 40px" type="submit" value="提 交 预 定 信 息" class="subBut"></input>
                     </div>
                 </div>
-                <!-- end of panel -->
-
-                <div class="panel">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#" href="#three">
-                                Collapse item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="three" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            The days have gone down in the West behind the hills into shadow. Who shall gather the smoke
-                            of the deadwood burning, Or behold the flowing years from the Sea returning?
-                        </div>
-                    </div>
-                </div>
-                <!-- end of panel -->
-
-                <div class="panel">
-                    <div class="panel-heading">
-                        aASDFA<input type="text">
-                    </div>
-                </div>
-                <!-- end of panel -->
-
             </div>
-
-
+            </form>
         </div>
-        <!-- end of wrap -->
-
     </div>
     <!-- end of container -->
 </section>
@@ -189,7 +258,13 @@
 %>
 <script src="../../../js/jquery-2.1.1.min.js " type="text/javascript"></script>
 <script src='../../../js/bootstrap.js'></script>
+<%--<script type="text/javascript" src="../../../js/tip/tipso.js"></script>--%>
+<%--<script type="text/javascript" src="../../../js/tip/tipso.min.js"></script>--%>
+<%--<script type="text/javascript" src="../../../js/tip/jquery-1.8.3.min.js"></script>--%>
 <script type="text/javascript">
+//    $(function() {
+//        $('#tip4').tipso();
+//    });
     $(document).ready(function() {
         $('.collapse.in').prev('.panel-heading').addClass('active');
         $('#accordion, #bs-collapse')
@@ -200,6 +275,11 @@
                     $(a.target).prev('.panel-heading').removeClass('active');
                 });
     });
+
+
+        function infoControl(){
+            document.getElementById("info").style.display = "none";
+        }
 </script>
 </body>
 </html>
