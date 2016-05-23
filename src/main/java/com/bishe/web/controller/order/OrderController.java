@@ -3,7 +3,7 @@ package com.bishe.web.controller.order;
 import com.bishe.domain.OrderInfoDo;
 import com.bishe.service.userOrder.AddUserOrderService;
 import com.bishe.service.userOrder.GetOrdersService;
-import com.bishe.web.userUtils.UserInfoUtils;
+import com.bishe.utils.userUtils.UserInfoUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * 发出订购信息的controller
+ * 发布需求的controller
  * Created by shuaigehong on 2016/5/12.
  */
 @Controller

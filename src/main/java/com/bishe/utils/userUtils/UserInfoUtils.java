@@ -1,4 +1,4 @@
-package com.bishe.web.userUtils;
+package com.bishe.utils.userUtils;
 
 import com.bishe.domain.UserInfoDo;
 

@@ -52,31 +52,31 @@
         <div class="main">
             <div id="txt_list" class="item_txt_box">
                 <div class="item_txt item_txt_1">
-                    <div class="txt_info png"> <strong class="hd">迅雷影音5.1</strong>
-                        <h2 class="hd">精彩视界 乐无止境</h2>
-                        <p class="hd">迅雷看看华丽升级版，重磅来袭！</p>
+                    <div class="txt_info png"> <strong class="hd">订做系统</strong>
+                        <h2 class="hd">精彩赛事 创意无限</h2>
+                        <p class="hd">想展现你的创意、才华！快来吧！</p>
                     </div>
                     <div class="detail">
                         <ul id="v_info">
                         </ul>
-                        <a href="" class="download_btn png">立即下载</a>
-                        <p>想找旧版迅雷看看？ <a href="#" target="_blank" class="chk_link">点击查看 ></a></p>
+                        <a href="" class="download_btn png">参与</a>
+                        <p>想组队？ <a href="#" target="_blank" class="chk_link">快去组团吧</a></p>
                     </div>
                 </div>
                 <div class="item_txt item_txt_2">
                     <div class="txt_info png">
-                        <h2 class="hd">全新片库 为您而来</h2>
-                        <p class="hd">海量资源，新鲜资讯，想看就看；<br/>
-                            视频类型清晰分类，剧集更新实时提醒。 </p>
+                        <h2 class="hd">上衣设计 为您而来</h2>
+                        <p class="hd">海量设计，新鲜创意，想评就评；<br/>
+                            创意时尚，设计新颖。 </p>
                     </div>
                     <div class="detail other">
                     </div>
                 </div>
                 <div class="item_txt item_txt_3">
                     <div class="txt_info png">
-                        <h2 class="hd">专业播放  尽享精彩</h2>
-                        <p class="hd">百种格式，高清视频，一点就播；<br/>
-                            看片搜片窗口分离，播放记录云端同步。 </p>
+                        <h2 class="hd">专业设计  量身定做</h2>
+                        <p class="hd">百种新款，随你喜欢；<br/>
+                           </p>
                     </div>
                     <div class="detail other">
                     </div>

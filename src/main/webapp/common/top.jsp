@@ -1,5 +1,5 @@
 <%@ page import="com.bishe.domain.UserInfoDo" %>
-<%@ page import="com.bishe.web.userUtils.UserInfoUtils" %><%--
+<%@ page import="com.bishe.utils.userUtils.UserInfoUtils" %><%--
   Created by IntelliJ IDEA.
   User: shuaigehong
   Date: 2016/5/12

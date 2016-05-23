@@ -1,6 +1,6 @@
 <%@ page import="com.bishe.domain.OrderInfoDo" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.bishe.web.userUtils.UserInfoUtils" %><%--
+<%@ page import="com.bishe.utils.userUtils.UserInfoUtils" %><%--
   Created by IntelliJ IDEA.
   User: shuaigehong
   Date: 2016/5/17

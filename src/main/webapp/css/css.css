@@ -55,7 +55,7 @@ body{ font:12px/1.5 \5FAE\8F6F\96C5\9ED1,Tahoma, Geneva, sans-serif; background:
 .bgs_box .wp{ position:absolute; left:50%; margin-left:-550px; top:50%; margin-top:-260px; height:auto!important; z-index:0!important; }
 
 .bgs_1{ background:url(active/bg1.jpg) no-repeat center top #1e58ab; background-size:100% 100%;}
-.bgs_1 .s_img{ background:url(active/s_img1.jpg) no-repeat; width:673px; height:404px; }
+.bgs_1 .s_img{ background:url(active/480_0105.jpg) no-repeat; width:673px; height:404px; }
 .item_txt_1 .txt_info{ background-position:0 0; width:383px; height:130px;}
 
 .s_left, .s_right{width:60px; height:60px; position:absolute; top:50%; margin-top:-30px; cursor:pointer; z-index:10;}
@@ -65,18 +65,18 @@ body{ font:12px/1.5 \5FAE\8F6F\96C5\9ED1,Tahoma, Geneva, sans-serif; background:
 .s_right:hover{ background-position:-62px -62px;}
 
 .switch_list{ position:absolute; left:50%; bottom:9%; height:10px; margin-left:-30px; text-align:center; z-index:10; overflow:hidden;}
-.switch_list span{ background-position:-151px -42px;  _background: url(active/dot.png) no-repeat -14px 0; float:left; vertical-align:top; width:10px; height:10px;overflow:hidden;  margin:0 14px 0 0; cursor:pointer;}
+.switch_list span{ background-position:-151px -42px;  _background: url(active/480_My_Own_Secret.jpg) no-repeat -14px 0; float:left; vertical-align:top; width:10px; height:10px;overflow:hidden;  margin:0 14px 0 0; cursor:pointer;}
 .switch_list .on{  background-position:-137px -42px; _background-position:0 0;}
 
 
 .bgs_2{ background:url(active/bg2.jpg) no-repeat center top #1385ea; background-size:100% 100%;z-index:0;}
-.bgs_2 .s_img{ background:url(active/s_img2.jpg) no-repeat; width:673px; height:404px;}
+.bgs_2 .s_img{ background:url(active/480_0111.jpg) no-repeat; width:673px; height:404px;}
 .item_txt_2 .txt_info{ background-position:0 -156px; width:383px; height:105px;}
 
 .bgs_3{ background:url(active/bg3.jpg) no-repeat center top #1cad75; background-size:100% 100%; z-index:0;}
-.bgs_3 .s_img{ background:url(active/s_img3.png) no-repeat; width:673px; height:404px;}
-.bgs_3 .shadow01{ background:url(active/shadow_2.png) no-repeat; background:none\9; width:285px; height:190px; padding:8px; position:absolute; left:-30px; bottom:-50px;}
-.bgs_3 .s_img01{ background:url(active/s_img3_1.jpg) no-repeat; width:285px; height:190px;}
+.bgs_3 .s_img{ background:url(active/480_0110.jpg) no-repeat; width:673px; height:404px;}
+.bgs_3 .shadow01{ background:url(active/480_dreamer.jpg) no-repeat; background:none\9; width:285px; height:190px; padding:8px; position:absolute; left:-30px; bottom:-50px;}
+.bgs_3 .s_img01{ background:url(active/480_yugao.jpg) no-repeat; width:285px; height:190px;}
 .item_txt_3 .txt_info{ background-position:0 -295px; width:383px; height:110px;}
 
 .footer{ background:#2c94f8; width:100%; height:45px; padding:5px 0; text-align:center;  position:absolute; bottom:0; line-height:34px; z-index:999;}
